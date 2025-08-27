@@ -1,0 +1,9 @@
+[package]
+name = "tortugui"
+version = "0.1.0"
+entrypoint = "lib.typ"
+
+[template]
+path = "."
+entrypoint = "main.typ"
+
