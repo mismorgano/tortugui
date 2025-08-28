@@ -2,6 +2,7 @@
 
 #let exercise = thmbox("exercise", "Ejercicio", base: none, stroke: black, bodyfmt: it => [_ #it _] )
 #let definition = thmplain("definition", "Definición", base: none)
+#let solution = thmplain("solution", "Solución", base: none, inset: (left: 0em)).with(numbering: none)
 #let proof = thmproof("proof", "Demostración", inset: (left: 0cm))
 
 #let template(title: none, doc) = {
