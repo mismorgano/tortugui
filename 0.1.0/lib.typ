@@ -1,6 +1,16 @@
 #import "@preview/ctheorems:1.1.3": thmrules, thmbox, thmplain, thmproof
 
-#let exercise = thmbox("exercise", "Ejercicio", base: none, stroke: black, bodyfmt: it => [_ #it _] )
+#let exercise = thmbox(
+  "exercise",
+  "Problema",
+  base: none,
+  fill: rgb("#f0f3d9"),
+  bodyfmt: it => [_ #it _],
+  namefmt: it => text(blue)[#it],
+  titlefmt: title => text(size: 1.5em)[_ #title _],
+  separator: [\ ],
+  inset: 1em
+)
 #let definition = thmplain("definition", "Definición", base: none)
 #let solution = thmplain("solution", "Solución", base: none, inset: (left: 0em)).with(numbering: none)
 #let proof = thmproof("proof", "Demostración", inset: (left: 0cm))
